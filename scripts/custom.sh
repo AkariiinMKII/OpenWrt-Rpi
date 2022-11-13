@@ -24,3 +24,17 @@ popd
 
 # Change default shell to zsh
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
+
+# change the voltage value for over-clock stablization
+config_file_cpufreq=`find package/ -follow -type f -path '*/luci-app-cpufreq/root/etc/config/cpufreq'`
+truncate -s-1 $config_file_cpufreq
+echo -e "\toption governor0 'schedutil'" >> $config_file_cpufreq
+echo -e "\toption minfreq0 '816000'" >> $config_file_cpufreq
+echo -e "\toption maxfreq0 '1512000'\n" >> $config_file_cpufreq
+
+# add pwm fan control service
+wget https://github.com/friendlyarm/friendlywrt/commit/cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
+git apply cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
+rm cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
+sed -i 's/pwmchip1/pwmchip0/' target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol.sh target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol-direct.sh
+;;
