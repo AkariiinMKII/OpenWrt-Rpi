@@ -37,4 +37,3 @@ wget https://github.com/friendlyarm/friendlywrt/commit/cebdc1f94dcd6363da3a5d7e1
 git apply cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
 rm cebdc1f94dcd6363da3a5d7e1e69fd741b8b718e.patch
 sed -i 's/pwmchip1/pwmchip0/' target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol.sh target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol-direct.sh
-;;
