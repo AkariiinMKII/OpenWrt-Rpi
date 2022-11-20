@@ -2,7 +2,6 @@
 
 *注意：“本项目”指 [SuLingGG/OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)，此处仅转载[源项目文档](https://github.com/SuLingGG/OpenWrt-Buildbot/blob/main/FUNDING.md)并添加当前备注，以下内容均未经修改。*
 
-----
 > 
 > 由于提供自建的固件下载服务需要服务器支持，目前我们已尽量选择 “比较经济” 的服务解决方案。
 > 
