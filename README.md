@@ -2,11 +2,7 @@
 
 本仓库 fork 自 [SuLingGG/OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)，并进行了以下修改：
 
-- 修改 CPU 电压（使用了 [klever1988/nanopi-openwrt](https://github.com/klever1988/nanopi-openwrt/blob/f2d9bb91e6d4afb0023bc18431fb4e6981953f10/scripts/patches.sh#L58-L63) 中的相关代码）
-
-- 添加基于 CPU 温度的 PWM 风扇控制（使用了 [klever1988/nanopi-openwrt](https://github.com/klever1988/nanopi-openwrt/blob/f2d9bb91e6d4afb0023bc18431fb4e6981953f10/scripts/patches.sh#L65-L69) 中的相关代码）
-
-- 降低自动编译频率，关闭 R2S 以外的自动编译（我怕被巨硬橄榄）
+- 降低自动编译频率，关闭 R4S 以外的自动编译（我怕被巨硬橄榄）
 
 - 移除了部分组件的预编译
 
