@@ -6,8 +6,22 @@
 
 - 移除了部分组件的预编译
 
+> ## 仓库存档说明
+>
+> 由于 18.06 版本已结束支持周期，且上游分支 [immortalwrt:openwrt-18.06-k5.4](https://github.com/immortalwrt/immortalwrt/tree/openwrt-18.06-k5.4) 已停止更新，
+>
+> 故本仓库转为存档 (Archive) 状态，终止所有无意义的编译任务。
+>
+> 现有软件源和固件不会被删除，你可以继续在 <https://openwrt.cc> 访问和下载到它们。
+>
+> 欢迎使用 immortalwrt 项目的官方固件:
+>
+> <https://downloads.immortalwrt.org>
+>
+> 感谢大家的支持和陪伴~
+>
 > ## 项目介绍
-> 
+>
 > 1. 提供适配于 树莓派全系、Rockchip 平台、ipq40xx 平台以及 x86 平台设备的 OpenWrt 固件
 > 2. 包含丰富的 OpenWrt 原版 LuCI 插件及社区 LuCI 插件
 > 3. 固件跟随源码更新自动编译，确保获得最新体验
@@ -17,29 +31,29 @@
 > 7. 提供全格式固件 / 文件 (ext4/squashfs/ubi/initramfs/rootfs)
 > 8. 对于高级用户，提供完整的固件/软件包构建工具 (imagebuilder / sdk / toolchain)
 > 9. 如果你想捐助此项目，请移步 [FUNDING.md](https://github.com/AkariiinMKII/OpenWrt-Rpi/blob/main/FUNDING.md)
-> 
+>
 > ## 文档
-> 
+>
 > 固件 下载安装 / 初始设置 / 软件包安装说明 等信息请看文档:
-> 
+>
 > <https://doc.openwrt.cc/2-OpenWrt-Rpi>
-> 
+>
 > ## 固件预览
-> 
+>
 > ### 主界面:
-> 
+>
 > ![主界面](https://ae05.alicdn.com/kf/H6814822fa93d4246837bea1edcec6d23j.png)
-> 
+>
 > ### 内置功能:
-> 
+>
 > (建议保存至本地放大查看)
-> 
+>
 > ![内置功能](https://ae02.alicdn.com/kf/Hf29f2d94339d4188bbdde7f3131b500af.png)
-> 
+>
 > ## 鸣谢
-> 
+>
 > 感谢以下项目 / 厂商:
-> 
+>
 > | Github Actions                                        | OpenWrt 源码项目                                             | OpenWrt 构建项目                                             | Action 项目                                                  | 云服务厂商                               |
 > | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------- |
 > | [Github Actions](https://github.com/features/actions) | [openwrt/openwrt](https://github.com/openwrt/openwrt/)       | [openwrt/buildbot](https://git.openwrt.org/?p=buildbot.git;a=summary) | [ncipollo/release-action](https://github.com/ncipollo/release-action) | [Acloud](https://acloud.net/)            |
